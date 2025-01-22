@@ -1,0 +1,8 @@
+services:
+
+  fluent-bit:
+    image: fluent/fluent-bit 
+    volumes:
+      - ./etc:/fluent-bit/etc
+      - ./log:/fluent-bit/log
+    restart: always
